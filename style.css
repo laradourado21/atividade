@@ -1,0 +1,23 @@
+#título{
+    text-align: center;
+    font-family:Engravers MT;
+    color: rgb(7, 5, 2);
+
+   }
+   body{
+    
+    background-repeat: no-repeat;
+    padding: 25px;
+    background-size: cover;
+   }
+   #bodyfranca{
+    text-align: center;
+    font-family: Century Regular;
+
+   }
+   
+   #paragrafofranca{
+    text-align: center;
+    font-family: Century Regular;
+
+   }

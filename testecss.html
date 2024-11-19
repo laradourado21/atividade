@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Complexo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+        }
+        .menu > li {
+            position: relative;
+            display: inline-block;
+        }
+        .menu > li > a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        .menu > li > a:hover {
+            background-color: #444;
+        }
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .submenu li {
+            width: 200px;
+        }
+        .submenu li a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        .submenu li a:hover {
+            background-color: #555;
+        }
+        .menu > li:hover .submenu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre</a>
+            <ul class="submenu">
+                <li><a href="#">Nossa História</a></li>
+                <li><a href="#">Equipe</a></li>
+                <li><a href="#">Carreiras</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Serviços</a>
+            <ul class="submenu">
+                <li><a href="#">Consultoria</a></li>
+                <li><a href="#">Desenvolvimento</a></li>
+                <li><a href="#">Design</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+</body>
+</html>
